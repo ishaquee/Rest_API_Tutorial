@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="bankInfo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="status" type="xs:string" />
+                <xs:element name="data">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="routingNumber" type="xs:unsignedInt" />
+                            <xs:element name="paymentType" type="xs:string" />
+                            <xs:element name="name" type="xs:string" />
+                            <xs:element name="addressFull" type="xs:string" />
+                            <xs:element name="street" />
+                            <xs:element name="city" type="xs:string" />
+                            <xs:element name="state" type="xs:string" />
+                            <xs:element name="zip" />
+                            <xs:element name="phone" type="xs:string" />
+                            <xs:element name="active" type="xs:string" />
+                            <xs:element name="lastUpdated" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

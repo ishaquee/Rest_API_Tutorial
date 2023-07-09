@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "height_feet": {},
+    "height_inches": {},
+    "last_name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "team": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "abbreviation": {
+          "type": "string"
+        },
+        "city": {
+          "type": "int"
+        },
+        "conference": {
+          "type": "string"
+        },
+        "division": {
+          "type": "string"
+        },
+        "full_name": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "abbreviation",
+        "city",
+        "conference",
+        "division",
+        "full_name",
+        "name"
+      ]
+    },
+    "weight_pounds": {}
+  },
+  "required": [
+    "id",
+    "first_name",
+    "height_feet",
+    "height_inches",
+    "last_name",
+    "position",
+    "team",
+    "weight_pounds"
+  ]
+}
